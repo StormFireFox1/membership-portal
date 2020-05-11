@@ -44,6 +44,6 @@ server.use(app.error.notFoundHandler);
 app.db.setup(app.config.isDevelopment, app.config.isDevelopment);
 
 // starts the server
-server.listen(app.config.port, () => {
+server.listen(process.env.OPTIC_API_PORT || app.config.port, () => {
   log.info('Started server on port %d.', app.config.port);
 });

@@ -1,0 +1,9 @@
+name: ACM Membership Portal API
+tasks:
+  # The default task, invoke using `api run start`
+  # Learn how to finish setting up Optic at http://docs.useoptic.com/setup
+  start:
+    command: npm run start
+    baseUrl: http://localhost:3000
+ignoreRequests:
+- OPTIONS *
